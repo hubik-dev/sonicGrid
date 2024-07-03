@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main>
+      <div class="input-container">
+        <div>
+          <label for="gridSize">Grid size:</label>
+          <input type="number" id="gridSize" step="1" value="3" />
+        </div>
+        <div>
+          <label for="canvasSize">Canvas size:</label>
+          <input type="number" id="canvasSize" step="100" value="800" />
+        </div>
+        <div>
+          <label for="bgColor">Background color:</label>
+          <input type="color" id="bgColor" value="#ffffff" />
+        </div>
+        <div>
+          <label for="imageUpload">Upload Images:</label>
+          <input type="file" id="imageUpload" multiple />
+        </div>
+        <div>
+          <label for="blankTileCheckbox">Include blank tile:</label>
+          <input type="checkbox" id="blankTileCheckbox" />
+        </div>
+        <div>
+          <label for="randomRotationMirroring"
+            >Random rotation and mirroring:</label
+          >
+          <input type="checkbox" id="randomRotationMirroring" />
+        </div>
+        <button id="confirmButton">Confirm</button>
+
+        <div id="previewContainer" class="preview-container"></div>
+      </div>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
